@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container-box{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.info{
+    flex:1;
+    background:#131f37;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 3em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header .logo img{
+    max-width: 25em;
+}
+
+header ul{
+    display: flex;
+    gap: 2em;
+}
+
+header ul li{
+    list-style: none;  
+}
+
+header ul li a{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+header ul li a:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+.content{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding:10em 2em;
+
+}
+.content img{
+    width:100%;
+}
+
+.content p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: center;
+    
+}
+
+.content a{
+    padding: .5em 3em;
+    background-color: #fff;
+    color: #333;
+    margin-top: 1em;
+    text-decoration: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+.content a:hover{
+    letter-spacing: 2px;
+}
+
+.redes{
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+.redes h3{
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 1px;
+}
+
+.redes li{
+    list-style: none;
+}
+
+.redes img{
+    max-width: 2em;
+}
+
+.images{
+    flex: 1.3;
+    position: relative;
+    color:red;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.imgbox{
+    width: 50%;
+    height: 50%;
+}
+
+.imgbox img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.imgbox:nth-child(3){
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .container-box{
+        flex-direction: column;
+    }
+    .imgbox{
+        width: 100%;
+    }
+}
